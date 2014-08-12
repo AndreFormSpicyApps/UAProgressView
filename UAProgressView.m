@@ -8,6 +8,7 @@
 
 #import "UAProgressView.h"
 
+
 NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAnimationKey";
 
 @interface UACircularProgressView : UIView
@@ -67,7 +68,8 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 	self.borderWidth = 1.0f;
 	self.lineWidth = 2.0f;
 	
-	[self setupGestureRecognizer];
+    //SpicyApps modification
+    //[self setupGestureRecognizer];
 	
 	[self tintColorDidChange];
 }
@@ -105,7 +107,8 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 - (void)tintColorDidChange {
     [super tintColorDidChange];
 	
-    UIColor *tintColor = self.tintColor;
+    //SpicyApps modification
+    UIColor *tintColor = [UIColor colorWithRed:0.463 green:0.690 blue:0.941 alpha:1.000];
 	
     self.progressView.shapeLayer.strokeColor = tintColor.CGColor;
     self.progressView.shapeLayer.borderColor = tintColor.CGColor;
