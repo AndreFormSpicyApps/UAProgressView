@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.license               = 'MIT'
   s.ios.deployment_target = '7.0'
   s.requires_arc          = true
-  s.source                = { :git => "https://github.com/UrbanApps/UAProgressView.git", :tag => s.version.to_s }
+  s.source                = { :git => "https://github.com/UrbanApps/UAProgressView.git", :branch => "master", :tag => s.version.to_s }
   s.source_files          = "UAProgressView.{h,m}"
 end
